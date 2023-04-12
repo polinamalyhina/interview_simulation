@@ -1,1 +1,1 @@
-web: gunicorn visitka.wsgi
+web: gunicorn interview.wsgi
