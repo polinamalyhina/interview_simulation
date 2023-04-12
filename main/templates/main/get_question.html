@@ -1,0 +1,13 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %}Interview simulation{% endblock %}
+
+{% block content %}
+<h1>Here your question!</h1>
+<h3>Time to answer.</h3>
+<p> {{ question.text }} </p>
+<button class="button-1" onclick="window.location.href='{% url 'get_question' %}'">Next!</button>
+<button class="button-2" onclick="window.location.href='{% url 'main_page' %}'">Give up.</button>
+
+{% endblock %}
